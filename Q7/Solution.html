@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <title>Toggle Visibility</title>
-</head>
-<body>
-  <button id="toggle-btn">Toggle Paragraph</button>
-  <p id="text">This is a paragraph.</p>
+  <head>
+    <title>Toggle Visibility</title>
+  </head>
+  <body>
+    <button id="toggle-btn">Toggle Paragraph</button>
+    <p id="text">This is a paragraph.</p>
 
-  <script>
-    document.getElementById("toggle-btn").addEventListener("click", function() {
-      const paragraph = document.getElementById("text");
-      if (paragraph.display === "none") {
-        paragraph.display = "block";
-      } else {
-        paragraph.display = "none";
-      }
-    });
-  </script>
-</body>
+    <script>
+      document
+        .getElementById("toggle-btn")
+        .addEventListener("click", function () {
+          const paragraph = document.getElementById("text");
+          if (paragraph.style.display === "none") {
+            paragraph.style.display = "block";
+          } else {
+            paragraph.style.display = "none";
+          }
+        });
+    </script>
+  </body>
 </html>

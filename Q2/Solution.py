@@ -16,7 +16,7 @@ def get_service_description(service_name):
     services_map = load_services()
     sorted_keys = list(services_map.keys())
     index = sorted_keys.index(service_name)
-    mapped_key = sorted_keys[(index + len(sorted_keys)) % len(service_name)]
+    mapped_key = sorted_keys[(index + len(sorted_keys)) % len(services_map)]
     return services_map[mapped_key]
 
 

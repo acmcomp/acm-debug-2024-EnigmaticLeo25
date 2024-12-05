@@ -22,10 +22,11 @@ HTML_TEMPLATE = """
 """
 
 
-@app.route("/submit", methods=["GET"])
+@app.route("/submit", methods=["GET","POST"])
 def submit():
-    data = request.form["person_name"]
-    return f"Wassgud, {data}"
+    if request.method == "POST":
+        data = request.form["person_name"]
+        return f"Wassgud, {data}"
 
 
 @app.route("/", methods=["GET"])

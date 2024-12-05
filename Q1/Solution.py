@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 class ACM_Debugging_Competition:
-    @app.route("/bye")
+    @app.route("/")
     def index():
         return "hi"
 

@@ -2,8 +2,8 @@
 # ACM Debugging Competition - December 2024
 
 ## Participant Information
-**Name:**  
-**BITS ID:**
+**Name:** Ethan Dsa 
+**BITS ID:** 2021A7PS0081U
 
 ## Competition Overview
 - **Date:** December 5, 2024

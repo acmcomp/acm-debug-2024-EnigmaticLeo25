@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    .navbar {
-      display: flex;
-      justify-content: space-around;
-      background: #333;
-      padding: 1em;
-    }
+  <head>
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        background: #333;
+        padding: 1em;
+      }
 
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-    }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
 
-    .nav-links a:hover {
-      background: #555;
-    }
+      .nav-links a:hover {
+        background: #555;
+      }
 
-    .dropdown {
-      display: inline-block;
-      position: absolute; /* Bug 1: Incorrect positioning */
-    }
+      .dropdown {
+        display: inline-block;
+        position: relative; /* Bug 1: Incorrect positioning */
+      }
 
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background: #444;
-      min-width: 160px;
-      /* Bug 3: Missing top position */
-    }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #444;
+        min-width: 160px;
+        /* Bug 3: Missing top position */
+        top: 30px;
+      }
 
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <nav class="navbar">
-    <a href="#" class="logo">CompanyX</a>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <div class="dropdown">
-        <a href="#products">Products</a>
-        <div class="dropdown-content">
-          <a href="#item1">Item 1</a>
-          <a href="#item2">Item 2</a>
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">CompanyX</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <a href="#products">Products</a>
+          <div class="dropdown-content">
+            <a href="#item1">Item 1</a>
+            <a href="#item2">Item 2</a>
+          </div>
         </div>
+        <a href="#contact">Contact</a>
       </div>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-</body>
+    </nav>
+  </body>
 </html>
